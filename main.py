@@ -58,6 +58,6 @@ profsFromFile = professor_pb2.Professors()
 with open('protobuf.data', 'rb') as f:
     profsFromFile.ParseFromString(f.read())
 
-print('DATA FROM JSON : \n')
+print('DATA FROM Protobuf based encoding : \n')
 print(profsFromFile, '\n')
-print('SIZE OF ProtobufEncoded DATA FILE (IN bytes) : ', os.stat('protobuf.data').st_size)
+print('SIZE OF Protobuf Encoded DATA FILE (IN bytes) : ', os.stat('protobuf.data').st_size)
